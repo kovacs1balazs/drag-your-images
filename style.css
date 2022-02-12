@@ -1,0 +1,60 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px;
+}
+
+#drop-region {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+    background-color: #bcfcd5;
+    color: rgb(110, 110, 110);
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 700px;
+    height: 300px;
+    z-index: 1;  
+    outline: 2px dashed gray;
+    outline-offset: -10px;
+    border-radius: 25px;
+}
+
+#drop-region:hover {
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;    
+}
+
+
+span {
+    position:absolute;
+    z-index: -1;      
+}
+
+button#upload {
+    width: 100px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+ 
+}
+button#upload:hover {
+    background-color: silver;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+
+#drop-region input {   
+    width: 700px;
+    height: 300px;
+    z-index: 0;
+    opacity: 0;
+    cursor: pointer;
+}
